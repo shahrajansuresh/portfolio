@@ -36,7 +36,7 @@ export default function ContactSection({ data }: { data: Portfolio }) {
             <a href={personal.linkedinUrl} target="_blank" rel="noopener noreferrer" className="card" style={{ padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', textDecoration: 'none', color: 'inherit' }}>
               <span style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 <span style={{ fontSize: '.62rem', fontFamily: 'var(--font-mono)', color: 'var(--muted)', letterSpacing: '.1em', textTransform: 'uppercase', minWidth: 48 }}>LINKEDIN</span>
-                <span style={{ fontSize: '.9rem', color: 'var(--white)', fontWeight: 500 }}>linkedin.com/in/shah-rajan</span>
+                <span style={{ fontSize: '.9rem', color: 'var(--white)', fontWeight: 500 }}>{personal.linkedinUrl.replace('https://www.','').replace('https://','')}</span>
               </span>
               <span className="text-blue">↗</span>
             </a>

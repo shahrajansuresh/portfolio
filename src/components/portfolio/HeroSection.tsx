@@ -29,7 +29,7 @@ export default function HeroSection({ data }: { data: Portfolio }) {
             {!imgError ? (
               <Image src={personal.photo} alt={personal.name} fill style={{ objectFit: 'cover', objectPosition: 'top' }} onError={() => setImgError(true)} />
             ) : (
-              <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.5rem' }}>👤</div>
+              <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg,#1e3a5f,#0c1a2e)', fontWeight: 800, fontSize: '2rem', color: 'var(--blue)', letterSpacing: '-.02em' }}>RS</div>
             )}
           </div>
         </div>

@@ -17,11 +17,11 @@ export default function ContactSection({ data }: { data: Portfolio }) {
       </ScrollReveal>
 
       <ScrollReveal delay={80}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 40 }}>
+        <div className="contact-grid">
           <a href={`mailto:${personal.email}`} className="card" style={{ padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', textDecoration: 'none', color: 'inherit' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
               <span style={{ fontSize: '.62rem', fontFamily: 'var(--font-mono)', color: 'var(--muted)', letterSpacing: '.1em', textTransform: 'uppercase', minWidth: 48 }}>EMAIL</span>
-              <span style={{ fontSize: '.9rem', color: 'var(--white)', fontWeight: 500 }}>{personal.email}</span>
+              <span style={{ fontSize: '.9rem', color: 'var(--white)', fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{personal.email}</span>
             </span>
             <span className="text-blue">↗</span>
           </a>

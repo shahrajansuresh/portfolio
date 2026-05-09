@@ -10,7 +10,7 @@ export default function SkillsSection({ skills }: { skills: Portfolio['skills'] 
         <h2 className="section-title" style={{ marginBottom: 40 }}>Technical Skills</h2>
       </ScrollReveal>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
+      <div className="skills-grid">
         {skills.map((group, i) => (
           <ScrollReveal key={i} delay={i * 60}>
             <div>

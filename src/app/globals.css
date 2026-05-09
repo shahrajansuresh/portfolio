@@ -167,3 +167,85 @@ body::after {
 @media (min-width: 768px) {
   .md-hidden { display: none !important; }
 }
+
+/* ── Responsive grids ── */
+
+/* Stats: 2 cols on mobile → 4 on sm+ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+@media (min-width: 480px) {
+  .stats-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Hero layout: stacked on mobile → side by side on lg */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr 340px; }
+}
+
+/* Hero photo: small circle mobile → larger on desktop */
+.hero-photo {
+  display: flex;
+  justify-content: center;
+  order: -1;
+}
+@media (min-width: 900px) {
+  .hero-photo {
+    order: 1;
+    justify-content: flex-end;
+  }
+}
+.hero-photo-inner {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+}
+@media (min-width: 900px) {
+  .hero-photo-inner { width: 200px; height: 200px; }
+}
+
+/* Approach: 1 col mobile → 2 col sm+ */
+.approach-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+@media (min-width: 600px) {
+  .approach-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Skills: 1 col mobile → 2 col sm+ → 3 col lg */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+@media (min-width: 600px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 960px) {
+  .skills-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Contact links */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 32px;
+}

@@ -27,10 +27,10 @@ export const portfolio = {
   },
 
   stats: [
-    { value: '4+',    label: 'Years Exp'      },
-    { value: '5+',    label: 'Apps Shipped'   },
-    { value: '1K+',   label: 'SKUs / Order'   },
-    { value: '100%',  label: 'Data Integrity' },
+    { value: '4+',    label: 'Years Exp'       },
+    { value: '5+',    label: 'Apps Shipped'    },
+    { value: '1K+',   label: 'SKUs / Order'    },
+    { value: '6',     label: 'Roles, One App'  },
   ],
 
   skills: [
@@ -112,24 +112,27 @@ export const portfolio = {
     {
       id: 'hawak',
       name: 'Hawak',
-      eyebrow: 'Enterprise · B2B · MENA',
-      stack: 'React Native · Custom Sync Engine · Redux · Realm DB',
-      impactLabel: '1,000+ SKUs per order · < 10 min cycle',
-      description: 'A B2B sales automation app for field reps visiting retail outlets and malls. Rebuilt from the inside out to work flawlessly with zero internet connectivity.',
-      challenge: "Realm Atlas Device Sync was deprecated overnight. A 5-year-old live enterprise codebase, MENA field reps depending on it daily, zero downtime allowed.",
-      built: "Architected a custom offline-first sync engine from scratch. Rebuilt the bulk order flow for 1,000+ SKUs per session. Executed React Native architecture upgrades on a live production app.",
+      eyebrow: 'Enterprise · B2B Field Sales · MENA',
+      stack: 'React Native · iOS & Android · Arabic / English · Multi-Tenant',
+      impactLabel: 'Instant UX · Any catalog size · Zero loaders',
+      description: 'A comprehensive B2B field sales platform built for distribution businesses across the MENA region. Sales reps, supervisors, and customers all operate from one unified app — in the field, in the warehouse, or without any internet connection. It replaces paper order forms, manual cash reconciliation, and disconnected spreadsheets with a single digital operation.',
+      challenge: "A distribution enterprise had field reps working in areas with no internet coverage, logging orders on paper, tracking payments manually, and giving supervisors zero visibility into daily team activity. Every hour offline was a potential lost sale or reconciliation error.",
+      built: "Delivered an end-to-end field sales digitization platform built to stay fast at any scale. Today the catalog holds 10,000+ products, 40,000+ images, and 1,000+ active deals — the app still launches in under 5 seconds. That number won't change at 100,000 products or 500,000 images either, because the performance is guaranteed by design, not by data size. Once open, users never see a loader: the entire catalog, cart, payments, and order history are instantly available. Sales reps browse, scan barcodes, and place orders fully offline. Supervisors get GPS-based live visibility of their team. Payments are logged digitally with receipts. A built-in loyalty rewards program incentivises repeat purchases and faster payments. Full bilingual Arabic/English support with RTL layout throughout.",
       metrics: [
-        { value: '1,000+', label: 'SKUs per order'   },
-        { value: '< 10m',  label: 'Full order cycle' },
-        { value: '100%',   label: 'Data integrity'   },
+        { value: '10K+', label: 'Products today'     },
+        { value: '40K+', label: 'Images today'       },
+        { value: '<5s',  label: 'Launch — always'    },
+        { value: 'Zero', label: 'Loaders — always'   },
       ],
       features: [
-        'True offline-first — zero data loss on reconnect',
-        'Custom sync engine replacing deprecated Realm Atlas',
-        'Full lifecycle ownership of a 5-year-old codebase',
-        'Serves enterprise clients across the MENA region',
+        'Launch time and zero-loader UX are guaranteed by design — holds at 100K products or 500K images',
+        'Works fully offline — every feature available with zero internet',
+        'GPS geofencing auto-tracks field rep visits and shifts in real time',
+        'Integrated payments: cash, terminal, and bank transfer with digital receipts',
+        'Customer loyalty rewards that drive repeat purchases and faster payments',
+        'Multi-tenant — one platform serving multiple enterprise businesses independently',
       ],
-      playStoreUrl: '#', // 🔗 Update with real Play Store link
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.hawak&pcampaignid=web_share',
       color: '#60a5fa',
     },
     {
@@ -164,11 +167,11 @@ export const portfolio = {
       location: 'Ahmedabad, India',
       period: 'Jan 2024 – Present',
       highlights: [
-        'Sole engineer owning a 5-year-old live enterprise product for a MENA client — drove the full product roadmap.',
-        'Architected a custom Sync Engine replacing deprecated Realm Atlas Device Sync — 100% data integrity in offline conditions.',
-        'Executed React Native architecture upgrades and dependency migrations on a live production app — zero downtime.',
-        'Rebuilt bulk order flow: 1,000+ SKU orders per customer in under 10 minutes.',
-        'Proactively resolved native breaking changes on every Android & iOS release cycle.',
+        'Sole engineer owning a live enterprise B2B field sales platform across the MENA region — full product ownership from roadmap to release.',
+        'Designed and shipped a complete offline-first field sales experience: product catalog, cart, payments, order tracking, GPS shift management, and customer loyalty — all working with zero internet.',
+        'Built geofence-based auto clock-in/clock-out so supervisors get real-time visibility of every field rep visit without manual check-ins.',
+        'Delivered a bilingual (Arabic/English) platform with full RTL layout support and multi-tenant architecture serving independent enterprise clients.',
+        'Rebuilt bulk order flow to handle 1,000+ SKU orders per customer under 10 minutes. Executed architecture upgrades on a live production app — zero downtime.',
       ],
     },
     {
